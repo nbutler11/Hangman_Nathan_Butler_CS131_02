@@ -30,7 +30,7 @@ public class Dictionary{
 	 * @throws FileNotFoundException
 	 */
 	private void readFile(String fileName) throws FileNotFoundException{
-		Scanner wordFile = new Scanner(new File("C:\\Users\\Nathan\\wordlist.txt"));
+		Scanner wordFile = new Scanner(new File("wordlist.txt"));
 		int count=0;
 		while(wordFile.hasNext()) {
 			wordList[count]=wordFile.nextLine();
@@ -45,7 +45,7 @@ public class Dictionary{
 	 * @throws FileNotFoundException
 	 */
 	public String chooseWord() throws FileNotFoundException{
-		readFile("C:\\Users\\Nathan\\wordlist.txt");
+		readFile("wordlist.txt");
 		CurrentCard = randomNumbers.nextInt(wordList.length);
 		return wordList[CurrentCard];
 	}//end method

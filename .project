@@ -14,4 +14,16 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/wlrecord.txt</name>
+			<type>1</type>
+			<location>C:/Users/Nathan/wlrecord.txt</location>
+		</link>
+		<link>
+			<name>src/wordlist.txt</name>
+			<type>1</type>
+			<location>C:/Users/Nathan/wordlist.txt</location>
+		</link>
+	</linkedResources>
 </projectDescription>

@@ -24,7 +24,7 @@ public class Hangman{
 	 * @throws FileNotFoundException
 	 */
 	public Hangman() throws FileNotFoundException {
-		dictionary = new Dictionary("C:\\Users\\Nathan\\wordlist.txt");
+		dictionary = new Dictionary("wordlist.txt");
 	}//end constructor
 	
 	/**
@@ -32,7 +32,7 @@ public class Hangman{
 	 * @throws IOException
 	 */
 	private void loadWL() throws IOException{
-		Scanner fileRead = new Scanner(new File("C:\\Users\\Nathan\\wlrecord.txt"));
+		Scanner fileRead = new Scanner(new File("wlrecord.txt"));
 		int wins = fileRead.nextInt();
 		int loss = fileRead.nextInt();
 		System.out.println("You have a total of " + wins + " wins and " + loss + " losses.");
@@ -43,11 +43,11 @@ public class Hangman{
 	 * @throws FileNotFoundException
 	 */
 	private void writeWL() throws FileNotFoundException{
-		Scanner fileRead = new Scanner(new File("C:\\Users\\Nathan\\wlrecord.txt")); 
+		Scanner fileRead = new Scanner(new File("wlrecord.txt")); 
 		String winsOverall = fileRead.nextLine();
 		int winAll = Integer.parseInt(winsOverall) + wins;
 		int lossOverall = fileRead.nextInt() + losses;
-		PrintWriter outFile = new PrintWriter("C:\\Users\\Nathan\\wlrecord.txt");
+		PrintWriter outFile = new PrintWriter("wlrecord.txt");
 		outFile.println(winAll);
 		outFile.println(lossOverall);
 		outFile.close();
